@@ -128,10 +128,19 @@ text-decoration: none;
 display: block;
 width: 100%;
 text-align: center;
-
-
 }
-    
+
+
+p{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+
  
     
 .book-reader nav ul li a:hover {
@@ -148,6 +157,7 @@ background-color: #fafafa;
 text-shadow: 0 1px #fff;
 position: absolute;
 padding: 2em;
+padding-top: 0em;
 overflow: auto;
 top: 3.5em;
 bottom: 3.5em;
@@ -174,6 +184,7 @@ background: linear-gradient(to right, #dddddd 0%, #fafafa 9%, #fafafa 91%, #dddd
 .book-reader section .page {
 max-width: 40em;
 margin: 1.75em auto;
+margin-top: 0em auto;
 }
 .book-reader section p {
 margin: 1.75em auto;
@@ -281,8 +292,8 @@ content: "Salir";
 }
 
 label[for="invert"] {
-right: 11em;
-width: 6em;
+left: 0em;
+width: 11em;
 }
 
 #invert {

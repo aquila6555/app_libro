@@ -13,7 +13,7 @@
 
     <script>
       function cambiartitulo() {
-            titulo.innerHTML = titulo.innerHTML == "La lechera y su cubeta" ? "The Milkmaid and Her Pail" : "La lechera y su cubeta";
+            titulo.innerHTML = titulo.innerHTML == "La Lechera y su Cubeta" ? "The Milkmaid and Her Pail" : "La Lechera y su Cubeta";
         }
 
         function cambiarTextouno() {
@@ -42,6 +42,12 @@
                 "Moral: Do not count you chickens before they are hatched." :
                 "Moraleja: No cuentes las gallinas antes de que nazcan.";
         }
+        function cambiarboton() {
+            translate.innerHTML = translate.innerHTML ==
+                "Translate" ?
+                "Traducir" :
+                "Translate";
+        }
       </script>
 
 </head>
@@ -58,16 +64,20 @@
 
    
   <header>
-    <a href="#home">Menu</a>
 
 
-    <h1><a href="#">Nombre del libro</a></h1>
+
+    <h1><a href="#">.: ERI :.</a></h1>
     </header>
   <nav>
     <ul>
       <li>
         <a href="page2.html">anterior</a></li>
-      <li><a href="#">contenido</a></li>
+<div onec>
+
+</div>
+      <li><a id="translate" href="#" onclick="cambiartitulo(), cambiarTextouno(), cambiarTextodos(), cambiarTextotres(), cambiarmoral(), cambiarboton()">Traducir</a></li>
+      
       <li><a href="page1.html">siguiente</a></li>
     </ul>
   </nav>
@@ -75,8 +85,8 @@
   <section>
     <div class="page">
 
-    <h1 id="titulo">The Milkmaid and Her Pail</h1>
-    <button id="cambiar" onclick="cambiartitulo(), cambiarTextouno(), cambiarTextodos(), cambiarTextotres(), cambiarmoral()">traduccion</button>
+    <h2 id="titulo">The Milkmaid and Her Pail</h2>
+    <!-- <button id="cambiar" onclick="cambiartitulo(), cambiarTextouno(), cambiarTextodos(), cambiarTextotres(), cambiarmoral()">Translate</button> -->
     <img src="img/lechera.jpg" />
 
 <div class="ready-player-1">
