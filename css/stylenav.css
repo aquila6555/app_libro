@@ -1,0 +1,103 @@
+
+.push {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.backBtn {
+  background-color: #3f3f3f;
+  font-size: 16px;
+  text-align: right;
+}
+.backBtn:hover {
+  color: #000;
+}
+.menu-right .backBtn {
+  text-align: left;
+}
+.menu-top .backBtn,
+.menu-bottom .backBtn {
+  text-align: left;
+}
+
+.menu {
+  border-right: 1px solid #616161;
+  background-color: #3f3f3f;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 280px;
+  height: 100%;
+}
+.menu a {
+  display: block;
+  color: #fff;
+  padding: 16px;
+  border-top: 1px solid #616161;
+  text-decoration: none;
+  position: relative;
+  z-index: 11;
+}
+.menu a:last-child {
+  border-bottom: 1px solid #616161;
+}
+.menu a:hover,
+.menu a:active {
+  background-color: #3f3f3f;
+}
+.menu-left {
+  left: -280px;
+}
+.menu-left.left-open {
+  left: 0;
+}
+.menu-right {
+  right: -280px;
+}
+.menu-right.right-open {
+  right: 0;
+}
+.menu-top {
+  width: 100%;
+  top: -100%;
+}
+.menu-top.top-open {
+  top: 0;
+}
+.menu-bottom {
+  width: 100%;
+  top: 100%;
+}
+.menu-bottom.bottom-open {
+  top: 0;
+}
+.push {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.push-left {
+  left: -280px;
+}
+.push-left.pushleft-open {
+  left: 0;
+}
+.push-toleft {
+  left: 280px;
+}
+.push-right {
+  right: -280px;
+}
+.push-right .backBtn {
+  text-align: left;
+}
+.push-right.pushright-open {
+  right: 0;
+}
+.push-toright {
+  left: -280px;
+}
