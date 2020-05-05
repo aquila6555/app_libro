@@ -338,6 +338,20 @@ label[for="fullscreen"]:before {
 label[for="invert"]:before {
   content: "Noche";
 }
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('img/splash1.gif') 50% 50% no-repeat rgb(249,249,249);
+    transition:all .1200s ease;
+    animation-duration: 90s;
+    transition-duration:90s;
+    animation: rotarload 90s ease-out infinite;
+    transform: rotate(0deg);
+}
 
 /*small size hack*/
 @media (max-width: 50em), (max-height: 25em) {
@@ -362,6 +376,10 @@ label[for="invert"]:before {
 </head>
 
 <body >
+
+  <div class="loader"></div>
+
+
 
   <article class="book-reader">
   <input type="checkbox" id="invert">
@@ -404,8 +422,12 @@ Officia post-ironic VHS, incididunt pork belly single-origin coffee viral mumble
   
 
     <script  src="js/index.js"></script>
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(window).load(function() {
+          $(".loader").fadeOut("slow");
+      });
+      </script>
 
 
 </body>

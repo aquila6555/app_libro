@@ -292,8 +292,8 @@ content: "Salir";
 }
 
 label[for="invert"] {
-left: 0em;
-width: 11em;
+    right: 11em;
+    width: 6em;
 }
 
 #invert {
