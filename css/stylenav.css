@@ -6,7 +6,7 @@
 }
 
 .backBtn {
-  background-color: #3f3f3f;
+  background-color: #ff4c01;
   font-size: 16px;
   text-align: right;
 }
@@ -22,32 +22,32 @@
 }
 
 .menu {
-  border-right: 1px solid #616161;
-  background-color: #3f3f3f;
+  border-right: 1px solid #ffd8b3f3;
+  background-color: #ff4c01;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
   position: fixed;
   top: 0;
   z-index: 10;
-  width: 280px;
+  width: 200px;
   height: 100%;
 }
 .menu a {
   display: block;
   color: #fff;
   padding: 16px;
-  border-top: 1px solid #616161;
+  border-top: 1px solid #ffd8b3f3;
   text-decoration: none;
   position: relative;
   z-index: 11;
 }
 .menu a:last-child {
-  border-bottom: 1px solid #616161;
+  border-bottom: 1px solid #ffd8b3f3;
 }
 .menu a:hover,
 .menu a:active {
-  background-color: #3f3f3f;
+  background-color: rgba(255, 140, 45, 0.274);
 }
 .menu-left {
   left: -280px;
