@@ -1,56 +1,21 @@
 ﻿<!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <title>Ebook App</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
-<link rel="stylesheet" href="../css/style.css">
-<link rel="stylesheet" href="../css/stylenav.css">
-<link rel="stylesheet" href="../css/green-audio-player.min.css">
-<link href="../css/open-iconic.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/stylenav.css">
+  <link rel="stylesheet" href="../css/green-audio-player.min.css">
+  <link href="../css/open-iconic.css" rel="stylesheet">
+  <script src="../js/translate.js"></script>
+  <link rel="stylesheet" href="../css/toogle.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
-    <script>
-      function cambiartitulo() {
-            titulo.innerHTML = titulo.innerHTML == "La Lechera y su Cubeta" ? "The Milkmaid and Her Pail" : "La Lechera y su Cubeta";
-        }
-
-        function cambiarTextouno() {
-            textouno.innerHTML = textouno.innerHTML ==
-                "Una vez había una joven lechera que iba al mercado con una jarra de leche. Mientras caminaba, pensó en todas las cosas que haría con el dinero que obtendría por vender su leche." ?
-                "Once there was a young milkmaid who was going to the market carrying a jug of milk. While walking, she thought about all the things she would do with the money she would get for selling her milk." :
-                "Una vez había una joven lechera que iba al mercado con una jarra de leche. Mientras caminaba, pensó en todas las cosas que haría con el dinero que obtendría por vender su leche.";
-        }
-
-        function cambiarTextodos() {
-            textodos.innerHTML = textodos.innerHTML ==
-               " “Cuando me paguen”, se dijo, “compraré algunas gallinas. Las gallinas pondrán muchos huevos que yo Se venderá en el mercado. Con el dinero que gano de los huevos me compraré un vestido y zapatos muy elegantes. Luego iré a la feria y como me veré tan hermosa, todos los niños querrán venir a hablar conmigo ”." ?
-                "When they pay me,” she said to herself, “I'll buy some chickens. The chickens will lay a lot of eggs which I will sell at the market. With the money I make from the eggs I will buy myself a dress and very elegant shoes. Then I will go to the fair and since I will look so beautiful, all the boys will want to come and talk to me." :
-                " “Cuando me paguen”, se dijo, “compraré algunas gallinas. Las gallinas pondrán muchos huevos que yo Se venderá en el mercado. Con el dinero que gano de los huevos me compraré un vestido y zapatos muy elegantes. Luego iré a la feria y como me veré tan hermosa, todos los niños querrán venir a hablar conmigo ”." ;
-        }
-
-        function cambiarTextotres() {
-            textotres.innerHTML = textotres.innerHTML ==
-                "Pensando en todo lo que haría con el dinero de vender su leche, la criada pronto se convirtió en distraído y tropezó con una piedra. Su jarra se rompió, derramando toda la leche. Con la jarra rota, también lo fueron sus sueños de gallinas y huevos, el vestido y los zapatos." ?
-                "Thinking of everything she would do with the money from selling her milk, the maid soon became distracted and tripped on a stone. Her jug broke, spilling all the milk. With the jug broken, so too were her dreams of the chickens and eggs, the dress and shoes." :
-                "Pensando en todo lo que haría con el dinero de vender su leche, la criada pronto se convirtió en distraído y tropezó con una piedra. Su jarra se rompió, derramando toda la leche. Con la jarra rota, también lo fueron sus sueños de gallinas y huevos, el vestido y los zapatos." ;
-        }
-        function cambiarmoral() {
-            moral.innerHTML = moral.innerHTML ==
-                "Moraleja: No cuentes las gallinas antes de que nazcan." ?
-                "Moral: Do not count you chickens before they are hatched." :
-                "Moraleja: No cuentes las gallinas antes de que nazcan.";
-        }
-        function cambiarboton() {
-            translate.innerHTML = translate.innerHTML ==
-                "Translate" ?
-                "Traducir" :
-                "Translate";
-        }
-      </script>
 
 </head>
 
@@ -58,7 +23,7 @@
 
   <nav class="menu menu-left">
     <a href="#" class="backBtn">&#8594;</a>
-    <a class="oi" data-glyph="home" href="home.hmtl"> Inicio</a>
+    <!-- <a class="oi" data-glyph="home" href="home.hmtl"> Inicio</a> -->
     <a class="oi" data-glyph="book" href="page0.html"> cuento 1</a>
     <a class="oi" data-glyph="book" href="page1.html"> cuento 2</a>
     <a class="oi" data-glyph="book" href="page2.html"> cuento 3</a>
@@ -66,83 +31,186 @@
     <a class="oi" data-glyph="book" href="page4.html"> cuento 5</a>
     <a class="oi" data-glyph="book" href="page5.html"> cuento 6</a>
     <a style="background-color: #ff7800" class="oi" data-glyph="book" href="page6.html"> cuento 7</a>
-    <a class="oi" data-glyph="code" href="about.hmt"> Acerca de</a>
+    <a class="oi" data-glyph="code" href="about.html"> Acerca de</a>
     <a class="oi" data-glyph="power-standby" href="#"> Salir</a>
   </nav>
 
   <article class="book-reader">
-  <input type="checkbox" id="invert">
-  
-  <input type="checkbox" id="fullscreen">
+    <input type="checkbox" id="invert">
 
-  <label class="oi" data-glyph="moon" for="invert"></label>
-  <label class="oi" data-glyph="fullscreen-enter" for="fullscreen"></label>
+    <input type="checkbox" id="fullscreen">
 
-   
-  <header>
+    <label class="oi" data-glyph="moon" for="invert"></label>
+    <label class="oi" data-glyph="fullscreen-enter" for="fullscreen"></label>
 
 
-    <a  class="oi" data-glyph="menu" href="#home" id="showLeft"></a>
-    <h1><a href="#">.: ERI :.</a></h1>
+    <header>
+
+
+      <a class="oi" data-glyph="menu" href="#home" id="showLeft"></a>
+      <h1><a href="#">.: Happy Book :.</a></h1>
     </header>
-  <nav>
-    <ul>
-      <li>
-        <a class="oi" data-glyph="chevron-left" href="page2.html"></a></li>
-<div onec>
+    <nav>
+      <ul>
+        <li>
+          <a class="oi" data-glyph="chevron-left" href="page5.html"></a></li>
+          <div class="sw">
+            <label class="switch">
+              <input type="checkbox" id="myCheck" onclick="traduccion()">
+              <span class="slide round"></span>
+            </label>
+          </div>
 
-</div>
-      <li><a class="oi" data-glyph="loop-circular" id="translate" href="#" onclick="cambiartitulo(), cambiarTextouno(), cambiarTextodos(), cambiarTextotres(), cambiarmoral()"></a></li>
-      
-      <li><a class="oi" data-glyph="chevron-right" href="page1.html"></a></li>
-    </ul>
-  </nav>
+        <li><a class="oi" data-glyph="chevron-right" href="page0.html"></a></li>
+      </ul>
+    </nav>
+
+    <section>
+      <div class="page">
+        <div id="english">
+        <h2 id="titulo">Little Red Riding Hood</h2>
+        <!-- <button id="cambiar" onclick="cambiartitulo(), cambiarTextouno(), cambiarTextodos(), cambiarTextotres(), cambiarmoral()">Translate</button> -->
+        <img src="../img/caperucita1.jpg" />
+
+        <div class="ready-player-1">
+          <audio preload="yes">
+            <source src="../media/Little_red_riding_hood.mp3">
+          </audio>
+        </div>
+
+          <p class="story-text">Once upon a time there was a little girl who wore a beautiful red cloak. Her mother, who
+            knew how to sew very well, had made it for her. The girl wore it so often that everyone called her Little
+            Red Riding Hood.</p>
+          <p class="story-text">One day, Little Red Riding Hood's mother called her and said, “Grandmother does not feel
+            very well. I have baked some cookies and I want you to take them to her.”</p>
+          <p class="story-text">“Of course,” said Little Red Riding Hood, putting on her cloak and filling her basket
+            with the freshly baked cookies.</p>
+          <p class="story-text">Before leaving, her mother told her, “Listen to me very well. Stay on the road and never
+            talk to strangers.”</p>
+          <p class="story-text">“I know mother,” said Little Red Riding Hood and left immediately to Grandma's house.
+          </p>
+          <p class="story-text">To get to Grandma's house, Little Red Riding Hood had to cross a path through the thick
+            forest. On the way, she met a wolf</p>
+          <p class="story-text">“Hello little girl. Where are you heading to on this wonderful day?” the wolf asked</p>
+          <p class="story-text">Little Red Riding Hood remembered that her mother told her not to talk to strangers, but
+            the wolf looked very elegant, and he was very friendly and polite.</p>
+          <p class="story-text">“I'm going to Grandma's house,” the girl replied. “She is sick and I'm going to take her
+            these cookies.”</p>
+          <p class="story-text">“What a good girl you are!” exclaimed the wolf. “How far do you have to go?”</p>
+          <p class="story-text">“Oh! Grandma lives at the end of the road,” answered Little Red Riding Hood with a
+            smile.</p>
+          <p class="story-text">“I wish you a very happy day, little girl,” the wolf replied.</p>
+          <p class="story-text">The wolf went into the forest. He had a huge appetite and was not as nice as he
+            appeared. He ran to Grandma's house before Little Red Riding Hood could arrive. His plan was to eat grandma,
+            Little Red Riding Hood and all the freshly baked cookies.</p>
+          <p class="story-text">The wolf knocked on Grandma's door. Upon seeing him, Grandma ran away terrified, leaving
+            behind her shawl. The wolf took the old woman's shawl and then put on her glasses and night cap. Quickly, he
+            climbed into Grandma’s bed, covering his nose with the blanket. Soon he heard a knock on the door:</p>
+          <p class="story-text">“Grandma, it's me, Little Red Riding Hood.”</p>
+          <p class="story-text">Disguising his voice to sound like Grandma, the wolf said, “Please, enter my dear girl.
+            I am in bed.”</p>
+          <p class="story-text">Little Red Riding Hood thought that her grandmother was very sick because she looked
+            very pale and sounded terrible.</p>
+          <p class="story-text">“Oh, dear grandma, what big eyes you have!” she said.</p>
+          <p class="story-text">“All the better to see you with” replied the wolf.</p>
+          <p class="story-text">“Oh, dear grandma, what big ears you have!” said Little Red Riding Hood.</p>
+          <p class="story-text">“All the better to hear you with, my dear!” the wolf whispered.</p>
+          <p class="story-text">“Oh, dear grandma, what big teeth you have!” said Little Red Riding Hood.</p>
+          <p class="story-text">“All the better to eat you with!” growled the wolf.</p>
+          <p class="story-text">With these words, the evil wolf threw off the blanket and jumped out of bed. Scared,
+            Little Red Riding Hood ran to the door. Just then, a woodcutter, noticing the door was open rushed inside.
+            Grandma was hiding behind him.</p>
+          <p class="story-text">At the sight of the woodcutter, the wolf jumped out the window and fled in horror never
+            to be seen again.</p>
+          <p class="story-text">Grandma and Little Red Riding Hood thanked the woodcutter for saving them from the wolf
+            and everyone ate cookies and milk. That day Little Red Riding Hood learned an important lesson: You should
+            never talk to strangers.</p>
+            
+        <h3 id="moral">Moral: Do not count you chickens before they are hatched.</h3>
+        <img src="../img/caperucita2.jpg" />
+        </div>
+        <div id="spanish" style="display: none;">
+          <h2 id="titulo">Caperucita Roja</h2>
+          <!-- <button id="cambiar" onclick="cambiartitulo(), cambiarTextouno(), cambiarTextodos(), cambiarTextotres(), cambiarmoral()">Translate</button> -->
+          <img src="../img/caperucita1.jpg" />
   
-  <section>
-    <div class="page">
-
-    <h2 id="titulo">Little Red Riding Hood</h2>
-    <!-- <button id="cambiar" onclick="cambiartitulo(), cambiarTextouno(), cambiarTextodos(), cambiarTextotres(), cambiarmoral()">Translate</button> -->
-    <img src="../img/caperucita1.jpg" />
-
-<div class="ready-player-1">
-  <audio preload="yes">
-      <source src="../media/Little_red_riding_hood.mp3">
-  </audio>
-</div>
-
-<p id="textouno">
-  Once there was a young milkmaid who was going to the market carrying a jug of milk. While walking, she thought
-  about all the things she would do with the money she would get for selling her milk.
-</p>
-<p id="textodos">“When they pay me,” she said to herself, “I'll buy some chickens. The chickens will lay a lot of
-  eggs which I
-  will sell at the market. With the money I make from the eggs I will buy myself a dress and very elegant shoes.
-  Then I will go to the fair and since I will look so beautiful, all the boys will want to come and talk to me.”
-</p>
-<p id="textotres">Thinking of everything she would do with the money from selling her milk, the maid soon became
-  distracted and
-  tripped on a stone. Her jug broke, spilling all the milk. With the jug broken, so too were her dreams of the
-  chickens and eggs, the dress and shoes.</p>
-
-  <h3 id="moral">Moral: Do not count you chickens before they are hatched.</h3>
-  <img src="../img/caperucita2.jpg" />
-
-    </div>
-  </section>
-</article>
+          <div class="ready-player-1">
+            <audio preload="yes">
+              <source src="../media/Little_red_riding_hood.mp3">
+            </audio>
+          </div>
   
-    <script  src="../js/index.js"></script>
-    <script  src="../js/jquery.min.js"></script>
-    <script  src="../js/scriptnav.js"></script>
-    <script src="../js/green-audio-player.min.js"></script>
+          <p class = "story-text"> Había una vez una niña que llevaba una hermosa capa roja. Su madre quien
+            sabía coser muy bien, lo había hecho para ella. La niña lo usaba tan a menudo que todos la llamaban Pequeña
+            Caperucita Roja. </p>
+          <p class = "story-text"> Un día, la madre de Caperucita Roja la llamó y le dijo: “La abuela no siente
+            muy bien. He horneado algunas galletas y quiero que se las lleves. </p>
+          <p class = "story-text"> "Por supuesto", dijo Caperucita Roja, poniéndose su capa y llenando su canasta
+            con las galletas recién horneadas. </p>
+          <p class = "story-text"> Antes de irse, su madre le dijo: “Escúchame muy bien. Mantente en el camino y nunca
+            hablar con extraños ". </p>
+          <p class = "story-text"> "Lo sé madre", dijo Caperucita Roja y se fue inmediatamente a la casa de la abuela.
+          </p>
+          <p class = "story-text"> Para llegar a la casa de la abuela, Caperucita Roja tuvo que cruzar un camino a través del grueso
+            bosque. En el camino, se encontró con un lobo </p>
+          <p class = "story-text"> "Hola niña. ¿A dónde vas en este maravilloso día? preguntó el lobo </p>
+          <p class = "story-text"> Caperucita Roja recordó que su madre le dijo que no hablara con extraños, pero
+            el lobo se veía muy elegante, y era muy amable y educado. </p>
+          <p class = "story-text"> "Voy a la casa de la abuela", respondió la niña. "Está enferma y la llevaré
+            estas cookies ". </p>
+          <p class = "story-text"> "¡Qué buena chica eres!" exclamó el lobo. "¿Hasta dónde tienes que ir?" </p>
+          <p class = "story-text"> "¡Oh! La abuela vive al final del camino ", respondió Caperucita Roja con un
+            sonríe. </p>
+          <p class = "story-text"> "Te deseo un día muy feliz, pequeña", respondió el lobo. </p>
+          <p class = "story-text"> El lobo se fue al bosque. Tenía un gran apetito y no era tan amable como él.
+            apareció. Corrió a la casa de la abuela antes de que Caperucita Roja pudiera llegar. Su plan era comer abuela,
+            Caperucita Roja y todas las galletas recién horneadas. </p>
+          <p class = "story-text"> El lobo llamó a la puerta de la abuela. Al verlo, la abuela huyó aterrorizada, dejando
+            Detrás de su chal. El lobo tomó el chal de la anciana y luego se puso las gafas y el gorro de dormir. Rápidamente
+            se subió a la cama de la abuela, cubriéndose la nariz con la manta. Pronto escuchó un golpe en la puerta: </p>
+          <p class = "story-text"> "Abuela, soy yo, Caperucita Roja". </p>
+          <p class = "story-text"> Disfrazando su voz para que pareciera abuela, el lobo dijo: “Por favor, entra mi querida niña.
+            Estoy en la cama ". </p>
+          <p class = "story-text"> Caperucita Roja pensó que su abuela estaba muy enferma porque parecía
+            muy pálido y sonaba terrible. </p>
+          <p class = "story-text"> "¡Oh, querida abuela, qué ojos tan grandes tienes!" ella dijo. </p>
+          <p class = "story-text"> "Mucho mejor verte" respondió el lobo. </p>
+          <p class = "story-text"> "¡Oh, querida abuela, qué orejas tienes!" dijo Caperucita Roja. </p>
+          <p class = "story-text"> "¡Mejor escucharte, querida!" susurró el lobo. </p>
+          <p class = "story-text"> "¡Oh, querida abuela, qué dientes tan grandes tienes!" dijo Caperucita Roja. </p>
+          <p class = "story-text"> "¡Mucho mejor para comerte!" gruñó el lobo. </p>
+          <p class = "story-text"> Con estas palabras, el lobo malvado arrojó la manta y saltó de la cama. Asustado,
+            Caperucita Roja corrió hacia la puerta. En ese momento, un leñador, al darse cuenta de que la puerta estaba abierta, entró rápidamente.
+            La abuela se escondía detrás de él. </p>
+          <p class = "story-text"> Al ver al leñador, el lobo saltó por la ventana y huyó horrorizado.
+            para ser visto de nuevo. </p>
+          <p class = "story-text"> La abuela y Caperucita Roja agradecieron al leñador por salvarlos del lobo
+            y todos comieron galletas y leche. Ese día, Caperucita Roja aprendió una importante lección: deberías
+            nunca hables con extraños. </p>
+              
+          <h3 id="moral">Moral: Do not count you chickens before they are hatched.</h3>
+          <img src="../img/caperucita2.jpg" />
+          </div>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-          new GreenAudioPlayer('.ready-player-1', { showTooltips: true, showDownloadButton: false, enableKeystrokes: true });
+      </div>
+    </section>
+  </article>
+
+  <script src="../js/index.js"></script>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/scriptnav.js"></script>
+  <script src="../js/green-audio-player.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      new GreenAudioPlayer('.ready-player-1', {
+        showTooltips: true,
+        showDownloadButton: false,
+        enableKeystrokes: true
       });
+    });
   </script>
-<!-- you are my dream .:eri:. -->
+  <!-- you are my dream .:eri:. -->
 
 </body>
 

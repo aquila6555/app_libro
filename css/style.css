@@ -207,9 +207,7 @@ border-radius: 20px;
 }
 .book-reader a {
 transition: all .15s ease;
--moz-box-shadow: inset 1px 0 rgba(255, 255, 255, 0.2), inset 2px 0 rgba(255, 255, 255, 0.2);
--webkit-box-shadow: inset 1px 0 rgba(255, 255, 255, 0.2), inset 2px 0 rgba(255, 255, 255, 0.2);
-box-shadow: inset 1px 0 rgba(255, 255, 255, 0.2), inset 2px 0 rgba(255, 255, 255, 0.2);
+
 }
 .book-reader a, .book-reader label, .book-reader input {
 -webkit-tap-highlight-color: transparent;
@@ -320,6 +318,7 @@ box-shadow: 0 0 0 5.5em #111;
 color: white;
 text-shadow: none;
 }
+
 #invert:checked ~ section p, #invert:checked ~ section h1 {
 color: white;
 }

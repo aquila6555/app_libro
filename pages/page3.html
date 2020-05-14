@@ -1,64 +1,28 @@
 ﻿<!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <title>Ebook App</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
-<link rel="stylesheet" href="../css/style.css">
-<link rel="stylesheet" href="../css/stylenav.css">
-<link rel="stylesheet" href="../css/green-audio-player.min.css">
-<link href="../css/open-iconic.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/stylenav.css">
+  <link rel="stylesheet" href="../css/green-audio-player.min.css">
+  <link href="../css/open-iconic.css" rel="stylesheet">
+  <script src="../js/translate.js"></script>
+  <link rel="stylesheet" href="../css/toogle.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-
-    <script>
-      function cambiartitulo() {
-            titulo.innerHTML = titulo.innerHTML == "La Lechera y su Cubeta" ? "The Milkmaid and Her Pail" : "La Lechera y su Cubeta";
-        }
-
-        function cambiarTextouno() {
-            textouno.innerHTML = textouno.innerHTML ==
-                "Una vez había una joven lechera que iba al mercado con una jarra de leche. Mientras caminaba, pensó en todas las cosas que haría con el dinero que obtendría por vender su leche." ?
-                "Once there was a young milkmaid who was going to the market carrying a jug of milk. While walking, she thought about all the things she would do with the money she would get for selling her milk." :
-                "Una vez había una joven lechera que iba al mercado con una jarra de leche. Mientras caminaba, pensó en todas las cosas que haría con el dinero que obtendría por vender su leche.";
-        }
-
-        function cambiarTextodos() {
-            textodos.innerHTML = textodos.innerHTML ==
-               " “Cuando me paguen”, se dijo, “compraré algunas gallinas. Las gallinas pondrán muchos huevos que yo Se venderá en el mercado. Con el dinero que gano de los huevos me compraré un vestido y zapatos muy elegantes. Luego iré a la feria y como me veré tan hermosa, todos los niños querrán venir a hablar conmigo ”." ?
-                "When they pay me,” she said to herself, “I'll buy some chickens. The chickens will lay a lot of eggs which I will sell at the market. With the money I make from the eggs I will buy myself a dress and very elegant shoes. Then I will go to the fair and since I will look so beautiful, all the boys will want to come and talk to me." :
-                " “Cuando me paguen”, se dijo, “compraré algunas gallinas. Las gallinas pondrán muchos huevos que yo Se venderá en el mercado. Con el dinero que gano de los huevos me compraré un vestido y zapatos muy elegantes. Luego iré a la feria y como me veré tan hermosa, todos los niños querrán venir a hablar conmigo ”." ;
-        }
-
-        function cambiarTextotres() {
-            textotres.innerHTML = textotres.innerHTML ==
-                "Pensando en todo lo que haría con el dinero de vender su leche, la criada pronto se convirtió en distraído y tropezó con una piedra. Su jarra se rompió, derramando toda la leche. Con la jarra rota, también lo fueron sus sueños de gallinas y huevos, el vestido y los zapatos." ?
-                "Thinking of everything she would do with the money from selling her milk, the maid soon became distracted and tripped on a stone. Her jug broke, spilling all the milk. With the jug broken, so too were her dreams of the chickens and eggs, the dress and shoes." :
-                "Pensando en todo lo que haría con el dinero de vender su leche, la criada pronto se convirtió en distraído y tropezó con una piedra. Su jarra se rompió, derramando toda la leche. Con la jarra rota, también lo fueron sus sueños de gallinas y huevos, el vestido y los zapatos." ;
-        }
-        function cambiarmoral() {
-            moral.innerHTML = moral.innerHTML ==
-                "Moraleja: No cuentes las gallinas antes de que nazcan." ?
-                "Moral: Do not count you chickens before they are hatched." :
-                "Moraleja: No cuentes las gallinas antes de que nazcan.";
-        }
-        function cambiarboton() {
-            translate.innerHTML = translate.innerHTML ==
-                "Translate" ?
-                "Traducir" :
-                "Translate";
-        }
-      </script>
-
+ 
 </head>
 
 <body class="style fade-in">
 
   <nav class="menu menu-left">
     <a href="#" class="backBtn">&#8594;</a>
-    <a class="oi" data-glyph="home" href="home.hmtl"> Inicio</a>
+    <!-- <a class="oi" data-glyph="home" href="home.hmtl"> Inicio</a> -->
     <a class="oi" data-glyph="book" href="page0.html"> cuento 1</a>
     <a class="oi" data-glyph="book" href="page1.html"> cuento 2</a>
     <a class="oi" data-glyph="book" href="page2.html"> cuento 3</a>
@@ -66,83 +30,131 @@
     <a class="oi" data-glyph="book" href="page4.html"> cuento 5</a>
     <a class="oi" data-glyph="book" href="page5.html"> cuento 6</a>
     <a class="oi" data-glyph="book" href="page6.html"> cuento 7</a>
-    <a class="oi" data-glyph="code" href="about.hmt"> Acerca de</a>
+    <a class="oi" data-glyph="code" href="about.html"> Acerca de</a>
     <a class="oi" data-glyph="power-standby" href="#"> Salir</a>
   </nav>
 
   <article class="book-reader">
-  <input type="checkbox" id="invert">
-  
-  <input type="checkbox" id="fullscreen">
+    <input type="checkbox" id="invert">
 
-  <label class="oi" data-glyph="moon" for="invert"></label>
-  <label class="oi" data-glyph="fullscreen-enter" for="fullscreen"></label>
+    <input type="checkbox" id="fullscreen">
 
-   
-  <header>
+    <label class="oi" data-glyph="moon" for="invert"></label>
+    <label class="oi" data-glyph="fullscreen-enter" for="fullscreen"></label>
 
 
-    <a  class="oi" data-glyph="menu" href="#home" id="showLeft"></a>
-    <h1><a href="#">.: ERI :.</a></h1>
+    <header>
+
+
+      <a class="oi" data-glyph="menu" href="#home" id="showLeft"></a>
+      <h1><a href="#">.: Happy Book :.</a></h1>
     </header>
-  <nav>
-    <ul>
-      <li>
-        <a class="oi" data-glyph="chevron-left" href="page2.html"></a></li>
-<div onec>
+    <nav>
+      <ul>
+        <li>
+          <a class="oi" data-glyph="chevron-left" href="page2.html"></a></li>
+          <div class="sw">
+            <label class="switch">
+              <input type="checkbox" id="myCheck" onclick="traduccion()">
+              <span class="slide round"></span>
+            </label>
+          </div>
 
-</div>
-      <li><a class="oi" data-glyph="loop-circular" id="translate" href="#" onclick="cambiartitulo(), cambiarTextouno(), cambiarTextodos(), cambiarTextotres(), cambiarmoral()"></a></li>
-      
-      <li><a class="oi" data-glyph="chevron-right" href="page1.html"></a></li>
-    </ul>
-  </nav>
+        <li><a class="oi" data-glyph="chevron-right" href="page4.html"></a></li>
+      </ul>
+    </nav>
+
+    <section>
+      <div class="page">
+
+        <div id="english">
+        <h2 id="titulo">The Tortoise and the Hare</h2>
+        <!-- <button id="cambiar" onclick="cambiartitulo(), cambiarTextouno(), cambiarTextodos(), cambiarTextotres(), cambiarmoral()">Translate</button> -->
+        <img src="../img/liebreytortuga.jpg" />
+
+        <div class="ready-player-1">
+          <audio preload="yes">
+            <source src="../media/Tortoise_hare.mp3">
+          </audio>
+        </div>
+
+          <p class="story-text">Once upon a time there was a hare who spent all day bragging about how fast he could
+            run. Tired of hearing him boast, the tortoise, challenged him to a race. </p>
+          <p class="story-text">“You must be kidding!” said the hare laughing. “I am so much faster than you.”</p>
+          <p class="story-text">“We shall see,” the tortoise replied. </p>
+          <p class="story-text">The next day, the animals of the forest gathered to watch the race. Everyone wanted to
+            see if the tortoise could beat the hare.</p>
+          <p class="story-text">The bear started the race yelling “On you mark, get set, go!”</p>
+          <p class="story-text">The hare immediately raced ahead, running faster than ever. He looked back and saw the
+            tortoise was only a few steps away from the starting line.</p>
+          <p class="story-text">“Foolish tortoise, ” thought the hare. “He is so slow. Why would he want to race me if
+            he has no chance to win?”</p>
+          <p class="story-text">Confident that he was going to win the race, the hare decided to stop in the middle of
+            the road to rest under a tree. The cool and pleasant shade of the tree was very relaxing, so much so that
+            the hare fell asleep.</p>
+          <p class="story-text">Meanwhile, the tortoise continued walking slowly, but steady. He was determined not to
+            give up. Soon, he found the hare sleeping peacefully.</p>
+          <p class="story-text">The tortoise was winning the race!</p>
+          <p class="story-text">When the tortoise approached the finish line, all the animals in the forest began
+            cheering with excitement. The noise woke the hare, who could not believe his eyes: the tortoise was crossing
+            the finish line and he had lost the race.</p>
+            <h3 id="moral">Moral: Do not count you chickens before they are hatched.</h3>
+        </div>
+
+        <div id="spanish" style="display: none;">
+          <h2 id="titulo">La tortuga y la liebre</h2>
+          <!-- <button id="cambiar" onclick="cambiartitulo(), cambiarTextouno(), cambiarTextodos(), cambiarTextotres(), cambiarmoral()">Translate</button> -->
+          <img src="../img/liebreytortuga.jpg" />
   
-  <section>
-    <div class="page">
+          <div class="ready-player-1">
+            <audio preload="yes">
+              <source src="../media/Tortoise_hare.mp3">
+            </audio>
+          </div>
+          <p class = "story-text"> Había una vez una liebre que pasaba todo el día alardeando de lo rápido que podía
+            correr. Cansado de escucharlo jactarse, la tortuga lo desafió a una carrera. </p>
+          <p class = "story-text"> "¡Debes estar bromeando!" dijo la liebre riendo. "Soy mucho más rápido que tú". </p>
+          <p class = "story-text"> "Ya veremos", respondió la tortuga. </p>
+          <p class = "story-text"> Al día siguiente, los animales del bosque se reunieron para ver la carrera. Todos querían
+            ver si la tortuga podría vencer a la liebre. </p>
+          <p class = "story-text"> El oso comenzó la carrera gritando "¡En tu marca, prepárate, vete!" </p>
+          <p class = "story-text"> La liebre corrió inmediatamente hacia adelante, corriendo más rápido que nunca. Miró hacia atrás y vio el
+            la tortuga estaba a solo unos pasos de la línea de partida. </p>
+          <p class = "story-text"> "Tortuga tonta", pensó la liebre. “Es muy lento. ¿Por qué querría correr conmigo si
+            no tiene oportunidad de ganar? "</p>
+          <p class = "story-text"> Confiando en que iba a ganar la carrera, la liebre decidió detenerse en medio de
+            El camino para descansar debajo de un árbol. La sombra fresca y agradable del árbol era muy relajante, tanto que
+            la liebre se durmió. </p>
+          <p class = "story-text"> Mientras tanto, la tortuga continuó caminando lentamente, pero estable. Estaba decidido a no
+            rendirse. Pronto, encontró a la liebre durmiendo pacíficamente. </p>
+          <p class = "story-text"> ¡La tortuga estaba ganando la carrera! </p>
+          <p class = "story-text"> Cuando la tortuga se acercaba a la línea de meta, todos los animales en el bosque comenzaron
+            animando con entusiasmo. El ruido despertó a la liebre, que no podía creer lo que veía: la tortuga se estaba cruzando.
+            la línea de meta y había perdido la carrera. </p>
+              <h3 id="moral">Moral: Do not count you chickens before they are hatched.</h3>
+          </div>
 
-    <h2 id="titulo">The Tortoise and the Hare</h2>
-    <!-- <button id="cambiar" onclick="cambiartitulo(), cambiarTextouno(), cambiarTextodos(), cambiarTextotres(), cambiarmoral()">Translate</button> -->
-    <img src="../img/liebreytortuga.jpg" />
 
-<div class="ready-player-1">
-  <audio preload="yes">
-      <source src="../media/Tortoise_hare.mp3">
-  </audio>
-</div>
 
-<p id="textouno">
-  Once there was a young milkmaid who was going to the market carrying a jug of milk. While walking, she thought
-  about all the things she would do with the money she would get for selling her milk.
-</p>
-<p id="textodos">“When they pay me,” she said to herself, “I'll buy some chickens. The chickens will lay a lot of
-  eggs which I
-  will sell at the market. With the money I make from the eggs I will buy myself a dress and very elegant shoes.
-  Then I will go to the fair and since I will look so beautiful, all the boys will want to come and talk to me.”
-</p>
-<p id="textotres">Thinking of everything she would do with the money from selling her milk, the maid soon became
-  distracted and
-  tripped on a stone. Her jug broke, spilling all the milk. With the jug broken, so too were her dreams of the
-  chickens and eggs, the dress and shoes.</p>
+      </div>
+    </section>
+  </article>
 
-  <h3 id="moral">Moral: Do not count you chickens before they are hatched.</h3>
-      
+  <script src="../js/index.js"></script>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/scriptnav.js"></script>
+  <script src="../js/green-audio-player.min.js"></script>
 
-    </div>
-  </section>
-</article>
-  
-    <script  src="../js/index.js"></script>
-    <script  src="../js/jquery.min.js"></script>
-    <script  src="../js/scriptnav.js"></script>
-    <script src="../js/green-audio-player.min.js"></script>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-          new GreenAudioPlayer('.ready-player-1', { showTooltips: true, showDownloadButton: false, enableKeystrokes: true });
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      new GreenAudioPlayer('.ready-player-1', {
+        showTooltips: true,
+        showDownloadButton: false,
+        enableKeystrokes: true
       });
+    });
   </script>
-<!-- you are my dream .:eri:. -->
+  <!-- you are my dream .:eri:. -->
 
 </body>
 

@@ -1,56 +1,20 @@
 ﻿<!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <title>Ebook App</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
-<link rel="stylesheet" href="../css/style.css">
-<link rel="stylesheet" href="../css/stylenav.css">
-<link rel="stylesheet" href="../css/green-audio-player.min.css">
-<link href="../css/open-iconic.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/stylenav.css">
+  <link rel="stylesheet" href="../css/green-audio-player.min.css">
+  <link href="../css/open-iconic.css" rel="stylesheet">
+  <script src="../js/translate.js"></script>
+  <link rel="stylesheet" href="../css/toogle.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-
-    <script>
-      function cambiartitulo() {
-            titulo.innerHTML = titulo.innerHTML == "La Lechera y su Cubeta" ? "The Milkmaid and Her Pail" : "La Lechera y su Cubeta";
-        }
-
-        function cambiarTextouno() {
-            textouno.innerHTML = textouno.innerHTML ==
-                "Una vez había una joven lechera que iba al mercado con una jarra de leche. Mientras caminaba, pensó en todas las cosas que haría con el dinero que obtendría por vender su leche." ?
-                "Once there was a young milkmaid who was going to the market carrying a jug of milk. While walking, she thought about all the things she would do with the money she would get for selling her milk." :
-                "Una vez había una joven lechera que iba al mercado con una jarra de leche. Mientras caminaba, pensó en todas las cosas que haría con el dinero que obtendría por vender su leche.";
-        }
-
-        function cambiarTextodos() {
-            textodos.innerHTML = textodos.innerHTML ==
-               " “Cuando me paguen”, se dijo, “compraré algunas gallinas. Las gallinas pondrán muchos huevos que yo Se venderá en el mercado. Con el dinero que gano de los huevos me compraré un vestido y zapatos muy elegantes. Luego iré a la feria y como me veré tan hermosa, todos los niños querrán venir a hablar conmigo ”." ?
-                "When they pay me,” she said to herself, “I'll buy some chickens. The chickens will lay a lot of eggs which I will sell at the market. With the money I make from the eggs I will buy myself a dress and very elegant shoes. Then I will go to the fair and since I will look so beautiful, all the boys will want to come and talk to me." :
-                " “Cuando me paguen”, se dijo, “compraré algunas gallinas. Las gallinas pondrán muchos huevos que yo Se venderá en el mercado. Con el dinero que gano de los huevos me compraré un vestido y zapatos muy elegantes. Luego iré a la feria y como me veré tan hermosa, todos los niños querrán venir a hablar conmigo ”." ;
-        }
-
-        function cambiarTextotres() {
-            textotres.innerHTML = textotres.innerHTML ==
-                "Pensando en todo lo que haría con el dinero de vender su leche, la criada pronto se convirtió en distraído y tropezó con una piedra. Su jarra se rompió, derramando toda la leche. Con la jarra rota, también lo fueron sus sueños de gallinas y huevos, el vestido y los zapatos." ?
-                "Thinking of everything she would do with the money from selling her milk, the maid soon became distracted and tripped on a stone. Her jug broke, spilling all the milk. With the jug broken, so too were her dreams of the chickens and eggs, the dress and shoes." :
-                "Pensando en todo lo que haría con el dinero de vender su leche, la criada pronto se convirtió en distraído y tropezó con una piedra. Su jarra se rompió, derramando toda la leche. Con la jarra rota, también lo fueron sus sueños de gallinas y huevos, el vestido y los zapatos." ;
-        }
-        function cambiarmoral() {
-            moral.innerHTML = moral.innerHTML ==
-                "Moraleja: No cuentes las gallinas antes de que nazcan." ?
-                "Moral: Do not count you chickens before they are hatched." :
-                "Moraleja: No cuentes las gallinas antes de que nazcan.";
-        }
-        function cambiarboton() {
-            translate.innerHTML = translate.innerHTML ==
-                "Translate" ?
-                "Traducir" :
-                "Translate";
-        }
-      </script>
 
 </head>
 
@@ -58,7 +22,7 @@
 
   <nav class="menu menu-left">
     <a href="#" class="backBtn">&#8594;</a>
-    <a class="oi" data-glyph="home" href="home.hmtl"> Inicio</a>
+    <!-- <a class="oi" data-glyph="home" href="home.hmtl"> Inicio</a> -->
     <a class="oi" data-glyph="book" href="page0.html"> cuento 1</a>
     <a class="oi" data-glyph="book" href="page1.html"> cuento 2</a>
     <a class="oi" data-glyph="book" href="page2.html"> cuento 3</a>
@@ -66,83 +30,138 @@
     <a class="oi" data-glyph="book" href="page4.html"> cuento 5</a>
     <a style="background-color: #ff7800" class="oi" data-glyph="book" href="page5.html"> cuento 6</a>
     <a class="oi" data-glyph="book" href="page6.html"> cuento 7</a>
-    <a class="oi" data-glyph="code" href="about.hmt"> Acerca de</a>
+    <a class="oi" data-glyph="code" href="about.html"> Acerca de</a>
     <a class="oi" data-glyph="power-standby" href="#"> Salir</a>
   </nav>
 
   <article class="book-reader">
-  <input type="checkbox" id="invert">
-  
-  <input type="checkbox" id="fullscreen">
+    <input type="checkbox" id="invert">
 
-  <label class="oi" data-glyph="moon" for="invert"></label>
-  <label class="oi" data-glyph="fullscreen-enter" for="fullscreen"></label>
+    <input type="checkbox" id="fullscreen">
 
-   
-  <header>
+    <label class="oi" data-glyph="moon" for="invert"></label>
+    <label class="oi" data-glyph="fullscreen-enter" for="fullscreen"></label>
 
 
-    <a  class="oi" data-glyph="menu" href="#home" id="showLeft"></a>
-    <h1><a href="#">.: ERI :.</a></h1>
+    <header>
+
+
+      <a class="oi" data-glyph="menu" href="#home" id="showLeft"></a>
+      <h1><a href="#">.: Happy Book :.</a></h1>
     </header>
-  <nav>
-    <ul>
-      <li>
-        <a class="oi" data-glyph="chevron-left" href="page2.html"></a></li>
-<div onec>
+    <nav>
+      <ul>
+        <li>
+          <a class="oi" data-glyph="chevron-left" href="page4.html"></a></li>
+        <div class="sw">
+          <label class="switch">
+            <input type="checkbox" id="myCheck" onclick="traduccion()">
+            <span class="slide round"></span>
+          </label>
+        </div>
 
-</div>
-      <li><a class="oi" data-glyph="loop-circular" id="translate" href="#" onclick="cambiartitulo(), cambiarTextouno(), cambiarTextodos(), cambiarTextotres(), cambiarmoral()"></a></li>
-      
-      <li><a class="oi" data-glyph="chevron-right" href="page1.html"></a></li>
-    </ul>
-  </nav>
-  
-  <section>
-    <div class="page">
+        <li><a class="oi" data-glyph="chevron-right" href="page6.html"></a></li>
+      </ul>
+    </nav>
 
-    <h2 id="titulo">The Boy Who Cried Wolf</h2>
-    <!-- <button id="cambiar" onclick="cambiartitulo(), cambiarTextouno(), cambiarTextodos(), cambiarTextotres(), cambiarmoral()">Translate</button> -->
-    <img src="../img/pastorcitomentiroso.jpg" />
+    <section>
+      <div class="page">
+        <div id="english">
+          <h2 id="titulo">The Boy Who Cried Wolf</h2>
+          <!-- <button id="cambiar" onclick="cambiartitulo(), cambiarTextouno(), cambiarTextodos(), cambiarTextotres(), cambiarmoral()">Translate</button> -->
+          <img src="../img/pastorcitomentiroso.jpg" />
 
-<div class="ready-player-1">
-  <audio preload="yes">
-      <source src="../media/Boy_cried_wolf.mp3">
-  </audio>
-</div>
+          <div class="ready-player-1">
+            <audio preload="yes">
+              <source src="../media/Boy_cried_wolf.mp3">
+            </audio>
+          </div>
 
-<p id="textouno">
-  Once there was a young milkmaid who was going to the market carrying a jug of milk. While walking, she thought
-  about all the things she would do with the money she would get for selling her milk.
-</p>
-<p id="textodos">“When they pay me,” she said to herself, “I'll buy some chickens. The chickens will lay a lot of
-  eggs which I
-  will sell at the market. With the money I make from the eggs I will buy myself a dress and very elegant shoes.
-  Then I will go to the fair and since I will look so beautiful, all the boys will want to come and talk to me.”
-</p>
-<p id="textotres">Thinking of everything she would do with the money from selling her milk, the maid soon became
-  distracted and
-  tripped on a stone. Her jug broke, spilling all the milk. With the jug broken, so too were her dreams of the
-  chickens and eggs, the dress and shoes.</p>
+          <p class="story-text">There was once a little shepherd taking care of his flock on the top of a hill. He was
+            very bored. To amuse himself he took a great breath and sang out, “Wolf! Wolf! The Wolf is chasing the
+            sheep!”</p>
+          <p class="story-text">The villagers came running to help the little shepherd and drive away the wolf. But when
+            they reached the top of the hill they did not find any wolves. Instead, they found the little shepherd
+            laughing.</p>
+          <p class="story-text">“Don't cry 'wolf when there's no wolf,” said the villagers and they left angry down the
+            hill.</p>
+          <p class="story-text">After a few hours, the little shepherd, finding himself once again very bored, shouted,
+            “Wolf, wolf! There is a wolf chasing the sheep.”</p>
+          <p class="story-text">The villagers ran again to help him, but seeing that there were no wolves, they told the
+            shepherd very angrily, “Don't cry wolf when there is no wolf. Do it only when a wolf is truly chasing the
+            sheep.”</p>
+          <p class="story-text">Having tricked the villagers once again, the shepherd boy was rolling on the ground with
+            laughter as he watched the villagers go down the hill.</p>
+          <p class="story-text">Later, the little shepherd saw a wolf near his flock. Scared, he shouted as loud as he
+            could.</p>
+          <p class="story-text">“Wolf, wolf! There is a wolf chasing the sheep.”</p>
+          <p class="story-text">But the villagers thought he was trying to trick them again, and this time they did not
+            come to his aid. The little shepherd cried inconsolably as he watched the wolf run away with all his sheep.
+          </p>
+          <p class="story-text">At dusk, the little shepherd returned to the village and told everyone, “The wolf a on
+            the hill and has taken all my sheep. Why did you not help me?”</p>
+          <p class="story-text">Then, the villagers responded, “We would have helped you, just like we did before, but
+            nobody believes in a liar even when he is telling the truth.”</p>
+          <h3 id="moral">Moral: Do not count you chickens before they are hatched.</h3>
+        </div>
+        <div id="spanish" style="display: none;">
+          <h2 id="titulo">El niño que lloró lobo</h2>
+          <!-- <button id="cambiar" onclick="cambiartitulo(), cambiarTextouno(), cambiarTextodos(), cambiarTextotres(), cambiarmoral()">Translate</button> -->
+          <img src="../img/pastorcitomentiroso.jpg" />
 
-  <h3 id="moral">Moral: Do not count you chickens before they are hatched.</h3>
-      
+          <div class="ready-player-1">
+            <audio preload="yes">
+              <source src="../media/Boy_cried_wolf.mp3">
+            </audio>
+          </div>
 
-    </div>
-  </section>
-</article>
-  
-    <script  src="../js/index.js"></script>
-    <script  src="../js/jquery.min.js"></script>
-    <script  src="../js/scriptnav.js"></script>
-    <script src="../js/green-audio-player.min.js"></script>
+          <p class = "story-text"> Había una vez un pequeño pastor cuidando su rebaño en la cima de una colina. Él era
+            muy aburrido. Para divertirse, respiró hondo y cantó: «¡Lobo! ¡Lobo! El lobo persigue al
+            ovejas! </p>
+          <p class = "story-text"> Los aldeanos llegaron corriendo para ayudar al pequeño pastor y ahuyentar al lobo. Pero cuando
+            Al llegar a la cima de la colina no encontraron ningún lobo. En cambio, encontraron al pequeño pastor
+            riendo. </p>
+          <p class = "story-text"> "No llores lobo cuando no hay lobo", dijeron los aldeanos y se fueron enojados
+            colina. </p>
+          <p class = "story-text"> Después de unas horas, el pequeño pastor, al encontrarse nuevamente muy aburrido, gritó:
+            “¡Lobo, lobo! Hay un lobo persiguiendo a las ovejas ". </p>
+          <p class = "story-text"> Los aldeanos corrieron nuevamente para ayudarlo, pero al ver que no había lobos, le dijeron al
+            pastor muy enojado, "No llores lobo cuando no hay lobo. Hazlo solo cuando un lobo realmente persiga
+            ovejas ". </p>
+          <p class = "story-text"> Después de haber engañado a los aldeanos una vez más, el pastorcillo estaba rodando por el suelo con
+            risa mientras veía a los aldeanos bajar la colina. </p>
+          <p class = "story-text"> Más tarde, el pequeño pastor vio a un lobo cerca de su rebaño. Asustado, gritó tan fuerte como él
+            podría. </p>
+          <p class = "story-text"> "¡Lobo, lobo! Hay un lobo persiguiendo a las ovejas ". </p>
+          <p class = "story-text"> Pero los aldeanos pensaron que estaba tratando de engañarlos nuevamente, y esta vez no lo hicieron.
+            ven en su ayuda. El pequeño pastor lloró desconsolado mientras veía al lobo huir con todas sus ovejas.
+          </p>
+          <p class = "story-text"> Al anochecer, el pequeño pastor regresó a la aldea y les dijo a todos: "El lobo está en
+            La colina y se ha llevado todas mis ovejas. ¿Por qué no me ayudaste? ”</p>
+          <p class = "story-text"> Luego, los aldeanos respondieron: “Te hubiéramos ayudado, como lo hicimos antes, pero
+            nadie cree en un mentiroso incluso cuando dice la verdad ". </p>
+          <h3 id="moral">Moral: Do not count you chickens before they are hatched.</h3>
+        </div>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-          new GreenAudioPlayer('.ready-player-1', { showTooltips: true, showDownloadButton: false, enableKeystrokes: true });
+      </div>
+    </section>
+  </article>
+
+  <script src="../js/index.js"></script>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/scriptnav.js"></script>
+  <script src="../js/green-audio-player.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      new GreenAudioPlayer('.ready-player-1', {
+        showTooltips: true,
+        showDownloadButton: false,
+        enableKeystrokes: true
       });
+    });
   </script>
-<!-- you are my dream .:eri:. -->
+  <!-- you are my dream .:eri:. -->
 
 </body>
 

@@ -1,64 +1,30 @@
 ﻿<!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <title>Ebook App</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
-<link rel="stylesheet" href="../css/style.css">
-<link rel="stylesheet" href="../css/stylenav.css">
-<link rel="stylesheet" href="../css/green-audio-player.min.css">
-<link href="../css/open-iconic.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/stylenav.css">
+  <link rel="stylesheet" href="../css/green-audio-player.min.css">
+  <link href="../css/open-iconic.css" rel="stylesheet">
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <script src="../js/translate.js"></script>
+  <link rel="stylesheet" href="../css/toogle.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
-    <script>
-      function cambiartitulo() {
-            titulo.innerHTML = titulo.innerHTML == "La Lechera y su Cubeta" ? "The Milkmaid and Her Pail" : "La Lechera y su Cubeta";
-        }
 
-        function cambiarTextouno() {
-            textouno.innerHTML = textouno.innerHTML ==
-                "Una vez había una joven lechera que iba al mercado con una jarra de leche. Mientras caminaba, pensó en todas las cosas que haría con el dinero que obtendría por vender su leche." ?
-                "Once there was a young milkmaid who was going to the market carrying a jug of milk. While walking, she thought about all the things she would do with the money she would get for selling her milk." :
-                "Una vez había una joven lechera que iba al mercado con una jarra de leche. Mientras caminaba, pensó en todas las cosas que haría con el dinero que obtendría por vender su leche.";
-        }
-
-        function cambiarTextodos() {
-            textodos.innerHTML = textodos.innerHTML ==
-               " “Cuando me paguen”, se dijo, “compraré algunas gallinas. Las gallinas pondrán muchos huevos que yo Se venderá en el mercado. Con el dinero que gano de los huevos me compraré un vestido y zapatos muy elegantes. Luego iré a la feria y como me veré tan hermosa, todos los niños querrán venir a hablar conmigo ”." ?
-                "When they pay me,” she said to herself, “I'll buy some chickens. The chickens will lay a lot of eggs which I will sell at the market. With the money I make from the eggs I will buy myself a dress and very elegant shoes. Then I will go to the fair and since I will look so beautiful, all the boys will want to come and talk to me." :
-                " “Cuando me paguen”, se dijo, “compraré algunas gallinas. Las gallinas pondrán muchos huevos que yo Se venderá en el mercado. Con el dinero que gano de los huevos me compraré un vestido y zapatos muy elegantes. Luego iré a la feria y como me veré tan hermosa, todos los niños querrán venir a hablar conmigo ”." ;
-        }
-
-        function cambiarTextotres() {
-            textotres.innerHTML = textotres.innerHTML ==
-                "Pensando en todo lo que haría con el dinero de vender su leche, la criada pronto se convirtió en distraído y tropezó con una piedra. Su jarra se rompió, derramando toda la leche. Con la jarra rota, también lo fueron sus sueños de gallinas y huevos, el vestido y los zapatos." ?
-                "Thinking of everything she would do with the money from selling her milk, the maid soon became distracted and tripped on a stone. Her jug broke, spilling all the milk. With the jug broken, so too were her dreams of the chickens and eggs, the dress and shoes." :
-                "Pensando en todo lo que haría con el dinero de vender su leche, la criada pronto se convirtió en distraído y tropezó con una piedra. Su jarra se rompió, derramando toda la leche. Con la jarra rota, también lo fueron sus sueños de gallinas y huevos, el vestido y los zapatos." ;
-        }
-        function cambiarmoral() {
-            moral.innerHTML = moral.innerHTML ==
-                "Moraleja: No cuentes las gallinas antes de que nazcan." ?
-                "Moral: Do not count you chickens before they are hatched." :
-                "Moraleja: No cuentes las gallinas antes de que nazcan.";
-        }
-        function cambiarboton() {
-            translate.innerHTML = translate.innerHTML ==
-                "Translate" ?
-                "Traducir" :
-                "Translate";
-        }
-      </script>
 
 </head>
 
 <body class="style fade-in">
 
   <nav class="menu menu-left">
-    <a href="#" class="backBtn">&#8594;</a>
-    <a class="oi" data-glyph="home" href="home.hmtl"> Inicio</a>
+    <!-- <a href="#" class="backBtn">&#8594;</a>
+    <a class="oi" data-glyph="home" href="home.hmtl"> Inicio</a> -->
     <a class="oi" data-glyph="book" href="page0.html"> cuento 1</a>
     <a class="oi" data-glyph="book" href="page1.html"> cuento 2</a>
     <a class="oi" data-glyph="book" href="page2.html"> cuento 3</a>
@@ -66,83 +32,187 @@
     <a style="background-color: #ff7800" class="oi" data-glyph="book" href="page4.html"> cuento 5</a>
     <a class="oi" data-glyph="book" href="page5.html"> cuento 6</a>
     <a class="oi" data-glyph="book" href="page6.html"> cuento 7</a>
-    <a class="oi" data-glyph="code" href="about.hmt"> Acerca de</a>
+    <a class="oi" data-glyph="code" href="about.html"> Acerca de</a>
     <a class="oi" data-glyph="power-standby" href="#"> Salir</a>
   </nav>
 
   <article class="book-reader">
-  <input type="checkbox" id="invert">
-  
-  <input type="checkbox" id="fullscreen">
+    <input type="checkbox" id="invert">
 
-  <label class="oi" data-glyph="moon" for="invert"></label>
-  <label class="oi" data-glyph="fullscreen-enter" for="fullscreen"></label>
+    <input type="checkbox" id="fullscreen">
 
-   
-  <header>
+    <label class="oi" data-glyph="moon" for="invert"></label>
+    <label class="oi" data-glyph="fullscreen-enter" for="fullscreen"></label>
 
 
-    <a  class="oi" data-glyph="menu" href="#home" id="showLeft"></a>
-    <h1><a href="#">.: ERI :.</a></h1>
+    <header>
+
+
+      <a class="oi" data-glyph="menu" href="#home" id="showLeft"></a>
+      <h1><a href="#">.: Happy Book :.</a></h1>
     </header>
-  <nav>
-    <ul>
-      <li>
-        <a class="oi" data-glyph="chevron-left" href="page2.html"></a></li>
-<div onec>
+    <nav>
+      <ul>
+        <li>
+          <a class="oi" data-glyph="chevron-left" href="page3.html"></a></li>
 
-</div>
-      <li><a class="oi" data-glyph="loop-circular" id="translate" href="#" onclick="cambiartitulo(), cambiarTextouno(), cambiarTextodos(), cambiarTextotres(), cambiarmoral()"></a></li>
-      
-      <li><a class="oi" data-glyph="chevron-right" href="page1.html"></a></li>
-    </ul>
-  </nav>
+          <div class="sw">
+            <label class="switch">
+              <input type="checkbox" id="myCheck" onclick="traduccion()">
+              <span class="slide round"></span>
+            </label>
+          </div>
+
+        <li><a class="oi" data-glyph="chevron-right" href="page5.html"></a></li>
+      </ul>
+    </nav>
+
+    <section>
+      <div class="page">
+        <div id="english">
+        <h2 id="titulo">The Three Little Pigs</h2>
+        <!-- <button id="cambiar" onclick="cambiartitulo(), cambiarTextouno(), cambiarTextodos(), cambiarTextotres(), cambiarmoral()">Translate</button> -->
+        <img src="../img/3cerditos1.jpg" />
+
+        <div class="ready-player-1">
+          <audio preload="yes">
+            <source src="../media/Three_little_pigs.mp3">
+          </audio>
+        </div>
+
+          <p class="story-text">In a small village not far away, lived Mother Pig with her three little piglets.
+            Everyone was very happy until one day Mother Pig told them, “Children, you have grown, it is time to live on
+            your own.”</p>
+          <p class="story-text">Before they left, she said to them, “In life nothing comes easy. Therefore, you must
+            learn to work to achieve your dreams.”</p>
+          <p class="story-text">Mother Pig kissed her piglets and they left to go off and live on their own.</p>
+          <p class="story-text">The youngest pig was lazy and did not pay attention to his mother´s words. He decided to
+            build a straw house, so he could finish early and lie down to rest.</p>
+          <p class="story-text">The middle brother was as lazy as the youngest, so he built a little wooden house. The
+            house was crooked because he did not want to read the instructions to build it properly.</p>
+          <p class="story-text">The older sister was a hard worker. This is because she used to be lazy and learned from
+            her mistakes. She decided to follow Mother Pig words and build a brick house. Building a brick house would
+            take a long time, but this did not matter to her.</p>
+          <p class="story-text">One night, the big bad wolf was walking through the woods when he came upon the youngest
+            pig’s straw house. He looked through the windows and saw the little pig sleeping peacefully. The wolf was
+            hungry and thought that the little pig would make a very delicious sandwich, so he knocked on the door and
+            shouted, “Little pig, little pig, let me in!”</p>
+          <p class="story-text">The little piglet woke up scared and answered, “No! No! No! Not by the hairs on my
+            chinny chin chin!”</p>
+          <p class="story-text">The big bad wolf was furious and said, “Then I’ll huff, and I’ll puff, and I’ll blow
+            your house down!”</p>
+          <p class="story-text">The wolf huffed and puffed and blew with all his strength until the straw house fell to
+            the ground. Fortunately, the little pig escaped, running to the wooden house of his brother while the big,
+            bad wolf was still blowing.</p>
+          <p class="story-text">The mean wolf, feeling cheated, went to the house of the middle pig and when he knocked
+            on his door he shouted, “Little pig, little pig let me in!”</p>
+          <p class="story-text">The little pig answered, “No! No! No! Not by the hairs on my chinny chin chin!”</p>
+          <p class="story-text">The hungry wolf became enraged and bellowed, “Then I’ll huff, and I I’ll puff, and I’ll
+            blow your house down!”</p>
+          <p class="story-text">The wolf huffed and puffed and blew with all his strength until the little wooden house
+            fell to the ground. Fortunately, the two little pigs escaped, running to the house of their sister while the
+            big, bad wolf was still blowing. Out of breath from running so fast, the two brothers told their sister
+            about the wolf and how he blew down their houses.</p>
+          <p class="story-text">“Dear brothers, it’s cold and you’ve had a very bad time, so let's enjoy the night by
+            the fireplace,” said Sister Pig. Just at that moment the three little pigs heard a knock on the door.</p>
+          <p class="story-text">“Little pig, little pig let me in!” shouted the big bad wolf.</p>
+          <p class="story-text">The pigs answered, “No, no, no! We will never let you in.”</p>
+          <p class="story-text">The hungry wolf was furious and once again shouted “Them I’ll huff, and I’ll puff, and
+            I’ll blow your house down.”</p>
+          <p class="story-text">Once again, the wolf huffed and puffed and blew with all his might, but the little brick
+            house did not fall. Enraged, as he was very hungry, the wolf decided to climb onto the roof to go down
+            through the chimney to get to the little pigs. However, when he slid down the chimney, the wolf burned his
+            tail on the fire below.</p>
+          <p class="story-text">“Ouch!” cried the wolf, and he ran out into the woods never to be seen again.</p>
+          <p class="story-text">A few days later, Mother Pig went to visit her little pigs and discovered that all three
+            had built brick houses. All the pigs had learned a very important lesson:</p>
+          <p class="story-text">“In life, nothing comes easy. Therefore, we must work hard to achieve our dreams.”</p>
+          <h3 id="moral">Moral: Do not count you chickens before they are hatched.</h3>
+          <img src="../img/3cerditos2.jpg" />
   
-  <section>
-    <div class="page">
-
-    <h2 id="titulo">The Three Little Pigs</h2>
-    <!-- <button id="cambiar" onclick="cambiartitulo(), cambiarTextouno(), cambiarTextodos(), cambiarTextotres(), cambiarmoral()">Translate</button> -->
-    <img src="../img/3cerditos1.jpg" />
-
-<div class="ready-player-1">
-  <audio preload="yes">
-      <source src="../media/Three_little_pigs.mp3">
-  </audio>
-</div>
-
-<p id="textouno">
-  Once there was a young milkmaid who was going to the market carrying a jug of milk. While walking, she thought
-  about all the things she would do with the money she would get for selling her milk.
-</p>
-<p id="textodos">“When they pay me,” she said to herself, “I'll buy some chickens. The chickens will lay a lot of
-  eggs which I
-  will sell at the market. With the money I make from the eggs I will buy myself a dress and very elegant shoes.
-  Then I will go to the fair and since I will look so beautiful, all the boys will want to come and talk to me.”
-</p>
-<p id="textotres">Thinking of everything she would do with the money from selling her milk, the maid soon became
-  distracted and
-  tripped on a stone. Her jug broke, spilling all the milk. With the jug broken, so too were her dreams of the
-  chickens and eggs, the dress and shoes.</p>
-
-  <h3 id="moral">Moral: Do not count you chickens before they are hatched.</h3>
-  <img src="../img/3cerditos2.jpg" />
-
-    </div>
-  </section>
-</article>
+        </div>
+        <div id="spanish" style="display: none;">
+          <h2 id="titulo">Los tres cerditos</h2>
+          <!-- <button id="cambiar" onclick="cambiartitulo(), cambiarTextouno(), cambiarTextodos(), cambiarTextotres(), cambiarmoral()">Translate</button> -->
+          <img src="../img/3cerditos1.jpg" />
   
-    <script  src="../js/index.js"></script>
-    <script  src="../js/jquery.min.js"></script>
-    <script  src="../js/scriptnav.js"></script>
-    <script src="../js/green-audio-player.min.js"></script>
+          <div class="ready-player-1">
+            <audio preload="yes">
+              <source src="../media/Three_little_pigs.mp3">
+            </audio>
+          </div>
+  
+          <p class = "story-text"> En un pequeño pueblo no muy lejos, vivía Mother Pig con sus tres cerditos.
+            Todos estaban muy contentos hasta que un día Madre Cerdo les dijo: "Hijos, ustedes han crecido, es hora de vivir.
+            la suya ". </p>
+          <p class = "story-text"> Antes de irse, ella les dijo: “En la vida, nada es fácil. Por lo tanto, debes
+            aprende a trabajar para alcanzar tus sueños ". </p>
+          <p class = "story-text"> Madre Cerdo besó a sus lechones y se fueron a vivir solos. </p>
+          <p class = "story-text"> El cerdo más joven era vago y no prestaba atención a las palabras de su madre. El decidió
+            construir una casa de paja, para que pueda terminar temprano y acostarse para descansar. </p>
+          <p class = "story-text"> El hermano del medio era tan vago como el más joven, por lo que construyó una pequeña casa de madera. los
+            la casa estaba torcida porque no quería leer las instrucciones para construirla correctamente. </p>
+          <p class = "story-text"> La hermana mayor era muy trabajadora. Esto es porque ella solía ser perezosa y aprendió de
+            sus errores Ella decidió seguir las palabras de Madre Cerdo y construir una casa de ladrillos. Construir una casa de ladrillo
+            lleva mucho tiempo, pero esto no le importó. </p>
+          <p class = "story-text"> Una noche, el lobo feroz estaba caminando por el bosque cuando se encontró con el más joven
+            casa de paja de cerdo. Miró por las ventanas y vio al cerdito durmiendo tranquilamente. El lobo era
+            hambriento y pensó que el cerdito haría un sándwich muy delicioso, así que llamó a la puerta y
+            gritó: "¡Cerdito, cerdito, déjame entrar!" </p>
+          <p class = "story-text"> El cerdito se despertó asustado y respondió: "¡No! ¡No! ¡No! No por los pelos de mi
+            chinny chin chin! "</p>
+          <p class = "story-text"> El lobo feroz se puso furioso y dijo: "Entonces resoplaré, resoplaré y soplaré".
+            tu casa abajo! "</p>
+          <p class = "story-text"> El lobo resopló, resopló y sopló con todas sus fuerzas hasta que la casa de paja cayó al suelo.
+            el terreno. Afortunadamente, el cerdito escapó, corriendo hacia la casa de madera de su hermano mientras el grande,
+            lobo malo todavía estaba soplando. </p>
+          <p class = "story-text"> El lobo malo, sintiéndose engañado, fue a la casa del cerdo medio y cuando llamó
+            en su puerta gritó: "¡Cerdito, cerdito, déjame entrar!" </p>
+          <p class = "story-text"> El cerdito respondió: "¡No! ¡No! ¡No! ¡No por los pelos de mi chinny chin chin! ”</p>
+          <p class = "story-text"> El lobo hambriento se enfureció y gritó: "Entonces resoplaré, y resoplaré, y
+            ¡derriba tu casa! "</p>
+          <p class = "story-text"> El lobo resopló, resopló y sopló con todas sus fuerzas hasta la casita de madera.
+            Cayó al suelo. Afortunadamente, los dos cerditos escaparon, corriendo a la casa de su hermana mientras el
+            El lobo grande y malo todavía estaba soplando. Sin aliento por correr tan rápido, los dos hermanos le dijeron a su hermana
+            sobre el lobo y cómo derribó sus casas. </p>
+          <p class = "story-text"> "Queridos hermanos, hace frío y la han pasado muy mal, así que disfrutemos la noche
+            la chimenea ”, dijo la hermana Pig. Justo en ese momento los tres cerditos escucharon un golpe en la puerta. </p>
+          <p class = "story-text"> "¡Cerdito, cerdito, déjame entrar!" gritó el lobo feroz. </p>
+          <p class = "story-text"> Los cerdos respondieron: "¡No, no, no! Nunca te dejaremos entrar ". </p>
+          <p class = "story-text"> El lobo hambriento estaba furioso y una vez más gritó "Les resoplaré, y resoplaré, y
+            Volaré tu casa ". </p>
+          <p class = "story-text"> Una vez más, el lobo resopló, resopló y sopló con todas sus fuerzas, pero el pequeño ladrillo
+            La casa no se cayó. Enfurecido, ya que tenía mucha hambre, el lobo decidió subir al techo para bajar
+            a través de la chimenea para llegar a los cerditos. Sin embargo, cuando se deslizó por la chimenea, el lobo quemó su
+            cola en el fuego de abajo. </p>
+          <p class = "story-text"> "¡Ay!" gritó el lobo, y salió corriendo hacia el bosque para no ser visto nunca más. </p>
+          <p class = "story-text"> Unos días después, Mother Pig fue a visitar a sus cerditos y descubrió que los tres
+            había construido casas de ladrillo. Todos los cerdos habían aprendido una lección muy importante: </p>
+          <p class = "story-text"> “En la vida, nada es fácil. Por lo tanto, debemos trabajar duro para lograr nuestros sueños ". </p>
+          <h3 id = "moral"> Moraleja: no cuente los pollos antes de que nazcan. </h3>
+            <img src="../img/3cerditos2.jpg" />
+    
+          </div>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-          new GreenAudioPlayer('.ready-player-1', { showTooltips: true, showDownloadButton: false, enableKeystrokes: true });
+      </div>
+    </section>
+  </article>
+
+  <script src="../js/index.js"></script>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/scriptnav.js"></script>
+  <script src="../js/green-audio-player.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      new GreenAudioPlayer('.ready-player-1', {
+        showTooltips: true,
+        showDownloadButton: false,
+        enableKeystrokes: true
       });
+    });
   </script>
-<!-- you are my dream .:eri:. -->
+  <!-- you are my dream .:eri:. -->
 
 </body>
 

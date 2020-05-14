@@ -1,56 +1,20 @@
 ﻿<!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <title>Ebook App</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
-<link rel="stylesheet" href="../css/style.css">
-<link rel="stylesheet" href="../css/stylenav.css">
-<link rel="stylesheet" href="../css/green-audio-player.min.css">
-<link href="../css/open-iconic.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/stylenav.css">
+  <link rel="stylesheet" href="../css/green-audio-player.min.css">
+  <link href="../css/open-iconic.css" rel="stylesheet">
+  <script src="../js/translate.js"></script>
+  <link rel="stylesheet" href="../css/toogle.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-
-    <script>
-      function cambiartitulo() {
-            titulo.innerHTML = titulo.innerHTML == "La Lechera y su Cubeta" ? "The Milkmaid and Her Pail" : "La Lechera y su Cubeta";
-        }
-
-        function cambiarTextouno() {
-            textouno.innerHTML = textouno.innerHTML ==
-                "Una vez había una joven lechera que iba al mercado con una jarra de leche. Mientras caminaba, pensó en todas las cosas que haría con el dinero que obtendría por vender su leche." ?
-                "Once there was a young milkmaid who was going to the market carrying a jug of milk. While walking, she thought about all the things she would do with the money she would get for selling her milk." :
-                "Una vez había una joven lechera que iba al mercado con una jarra de leche. Mientras caminaba, pensó en todas las cosas que haría con el dinero que obtendría por vender su leche.";
-        }
-
-        function cambiarTextodos() {
-            textodos.innerHTML = textodos.innerHTML ==
-               " “Cuando me paguen”, se dijo, “compraré algunas gallinas. Las gallinas pondrán muchos huevos que yo Se venderá en el mercado. Con el dinero que gano de los huevos me compraré un vestido y zapatos muy elegantes. Luego iré a la feria y como me veré tan hermosa, todos los niños querrán venir a hablar conmigo ”." ?
-                "When they pay me,” she said to herself, “I'll buy some chickens. The chickens will lay a lot of eggs which I will sell at the market. With the money I make from the eggs I will buy myself a dress and very elegant shoes. Then I will go to the fair and since I will look so beautiful, all the boys will want to come and talk to me." :
-                " “Cuando me paguen”, se dijo, “compraré algunas gallinas. Las gallinas pondrán muchos huevos que yo Se venderá en el mercado. Con el dinero que gano de los huevos me compraré un vestido y zapatos muy elegantes. Luego iré a la feria y como me veré tan hermosa, todos los niños querrán venir a hablar conmigo ”." ;
-        }
-
-        function cambiarTextotres() {
-            textotres.innerHTML = textotres.innerHTML ==
-                "Pensando en todo lo que haría con el dinero de vender su leche, la criada pronto se convirtió en distraído y tropezó con una piedra. Su jarra se rompió, derramando toda la leche. Con la jarra rota, también lo fueron sus sueños de gallinas y huevos, el vestido y los zapatos." ?
-                "Thinking of everything she would do with the money from selling her milk, the maid soon became distracted and tripped on a stone. Her jug broke, spilling all the milk. With the jug broken, so too were her dreams of the chickens and eggs, the dress and shoes." :
-                "Pensando en todo lo que haría con el dinero de vender su leche, la criada pronto se convirtió en distraído y tropezó con una piedra. Su jarra se rompió, derramando toda la leche. Con la jarra rota, también lo fueron sus sueños de gallinas y huevos, el vestido y los zapatos." ;
-        }
-        function cambiarmoral() {
-            moral.innerHTML = moral.innerHTML ==
-                "Moraleja: No cuentes las gallinas antes de que nazcan." ?
-                "Moral: Do not count you chickens before they are hatched." :
-                "Moraleja: No cuentes las gallinas antes de que nazcan.";
-        }
-        function cambiarboton() {
-            translate.innerHTML = translate.innerHTML ==
-                "Translate" ?
-                "Traducir" :
-                "Translate";
-        }
-      </script>
 
 </head>
 
@@ -58,7 +22,7 @@
 
   <nav class="menu menu-left">
     <a href="#" class="backBtn">&#8594;</a>
-    <a class="oi" data-glyph="home" href="home.hmtl"> Inicio</a>
+    <!-- <a class="oi" data-glyph="home" href="home.hmtl"> Inicio</a> -->
     <a class="oi" data-glyph="book" href="page0.html"> cuento 1</a>
     <a class="oi" data-glyph="book" href="page1.html"> cuento 2</a>
     <a style="background-color: #ff7800" class="oi" data-glyph="book" href="page2.html"> cuento 3</a>
@@ -66,83 +30,246 @@
     <a class="oi" data-glyph="book" href="page4.html"> cuento 5</a>
     <a class="oi" data-glyph="book" href="page5.html"> cuento 6</a>
     <a class="oi" data-glyph="book" href="page6.html"> cuento 7</a>
-    <a class="oi" data-glyph="code" href="about.hmt"> Acerca de</a>
+    <a class="oi" data-glyph="code" href="about.html"> Acerca de</a>
     <a class="oi" data-glyph="power-standby" href="#"> Salir</a>
   </nav>
 
   <article class="book-reader">
-  <input type="checkbox" id="invert">
-  
-  <input type="checkbox" id="fullscreen">
+    <input type="checkbox" id="invert">
 
-  <label class="oi" data-glyph="moon" for="invert"></label>
-  <label class="oi" data-glyph="fullscreen-enter" for="fullscreen"></label>
+    <input type="checkbox" id="fullscreen">
 
-   
-  <header>
+    <label class="oi" data-glyph="moon" for="invert"></label>
+    <label class="oi" data-glyph="fullscreen-enter" for="fullscreen"></label>
 
 
-    <a  class="oi" data-glyph="menu" href="#home" id="showLeft"></a>
-    <h1><a href="#">.: ERI :.</a></h1>
+    <header>
+
+
+      <a class="oi" data-glyph="menu" href="#home" id="showLeft"></a>
+      <h1><a href="#">.: Happy Book :.</a></h1>
     </header>
-  <nav>
-    <ul>
-      <li>
-        <a class="oi" data-glyph="chevron-left" href="page2.html"></a></li>
-<div onec>
+    <nav>
+      <ul>
+        <li>
+          <a class="oi" data-glyph="chevron-left" href="page1.html"></a></li>
 
-</div>
-      <li><a class="oi" data-glyph="loop-circular" id="translate" href="#" onclick="cambiartitulo(), cambiarTextouno(), cambiarTextodos(), cambiarTextotres(), cambiarmoral()"></a></li>
-      
-      <li><a class="oi" data-glyph="chevron-right" href="page1.html"></a></li>
-    </ul>
-  </nav>
-  
-  <section>
-    <div class="page">
+        <div class="sw">
+          <label class="switch">
+            <input type="checkbox" id="myCheck" onclick="traduccion()">
+            <span class="slide round"></span>
+          </label>
+        </div>
 
-    <h2 id="titulo">Snow White and the Seven Dwarfs</h2>
-    <!-- <button id="cambiar" onclick="cambiartitulo(), cambiarTextouno(), cambiarTextodos(), cambiarTextotres(), cambiarmoral()">Translate</button> -->
-    <img src="../img/blancanieves1.jpg" />
+        <li><a class="oi" data-glyph="chevron-right" href="page3.html"></a></li>
+      </ul>
+    </nav>
 
-<div class="ready-player-1">
-  <audio preload="yes">
-      <source src="../media/Snow_white.mp3">
-  </audio>
-</div>
+    <section>
+      <div class="page">
 
-<p id="textouno">
-  Once there was a young milkmaid who was going to the market carrying a jug of milk. While walking, she thought
-  about all the things she would do with the money she would get for selling her milk.
-</p>
-<p id="textodos">“When they pay me,” she said to herself, “I'll buy some chickens. The chickens will lay a lot of
-  eggs which I
-  will sell at the market. With the money I make from the eggs I will buy myself a dress and very elegant shoes.
-  Then I will go to the fair and since I will look so beautiful, all the boys will want to come and talk to me.”
-</p>
-<p id="textotres">Thinking of everything she would do with the money from selling her milk, the maid soon became
-  distracted and
-  tripped on a stone. Her jug broke, spilling all the milk. With the jug broken, so too were her dreams of the
-  chickens and eggs, the dress and shoes.</p>
+        <div id="english">
+          <h2 id="titulo">Snow White and the Seven Dwarfs</h2>
+          <!-- <button id="cambiar" onclick="cambiartitulo(), cambiarTextouno(), cambiarTextodos(), cambiarTextotres(), cambiarmoral()">Translate</button> -->
+          <img src="../img/blancanieves1.jpg" />
 
-  <h3 id="moral">Moral: Do not count you chickens before they are hatched.</h3>
-  <img src="../img/blancanieves2.jpg" />
+          <div class="ready-player-1">
+            <audio preload="yes">
+              <source src="../media/Snow_white.mp3">
+            </audio>
+          </div>
 
-    </div>
-  </section>
-</article>
-  
-    <script  src="../js/index.js"></script>
-    <script  src="../js/jquery.min.js"></script>
-    <script  src="../js/scriptnav.js"></script>
-    <script src="../js/green-audio-player.min.js"></script>
+          <p id="ones">
+            Once upon a time, there was a beautiful young princess named Snow White. She lived in a faraway kingdom with
+            her father and stepmother.
+          </p>
+          <p id="two">Her stepmother, the queen, was also very beautiful but arrogant and proud. She spent all day
+            staring
+            at herself in front of the mirror. The mirror was magical and when in front of it she would asked, “Mirror,
+            mirror on the wall, who is the most beautiful woman of all?”
+          </p>
+          <p id="three">The mirror would answer, “You are the most beautiful of all women”.</p>
+          <p id="four">This answer satisfied the queen because she knew that her mirror always told the truth.</p>
+          <p id="five">However, as the years passed by, the beauty and kindness of Snow White became more evident, even
+            surpassing that of the queen. Finally, there came a day when the queen asked, “Mirror, mirror, on the wall,
+            who is the most beautiful of all?”</p>
+          <p id="six">The mirror answered, “Snow White is kinder and more beautiful than you.”</p>
+          <p id="seven">The queen was filled with anger. She devised a plan to get rid of Snow White. She asked to see
+            the
+            palace
+            hunter and said to him, “Take the young princess to the forest and make sure that the wild animals take care
+            of her so that we never see her again.”</p>
+          <p id="eight">Tricking Snow White, the hunter took her deep into the forest, but when he was about to carry
+            out
+            the queen's orders, he took pity on the beautiful girl and said, “Run, go away, poor girl. Find a safe place
+            to live.”</p>
+          <p id="nine">Finding herself alone in the forest, she ran as far as she could until it was nightfall. Then,
+            she spotted a small hut and went into it to sleep. Everything in the cabin was small. There was a table with
+            a
+            white tablecloth and seven small plates, each a spoon. Also, there were seven small knives and forks, and
+            seven jars. There were seven small beds against the wall, one next to the other and covered with blankets as
+            white
+            as snow.</p>
+          <p id="ten">
+            Having not eaten all day, Snow White was hungry and thirsty, so she ate a little bit of vegetables and bread
+            from each plate and drank a small sip from each jar. Then, being tired, she tried laying down on each one of
+            the beds until finally settling on the seventh bed.
+          </p>
+          <p id="eleven">When it was dark, the owners of the cabin returned. They were seven dwarfs who mined gold and
+            precious stones in the mountains. Inside the cabin, they lit their seven lanterns, and noticed that things
+            were not exactly in the order in which they had left them.</p>
+          <p id="twelve">The first dwarf said, “Who has sat in my chair?”</p>
+          <p id="thirteen">The second said, “Who ate from my plate?”</p>
+          <p id="fourteen">The third said, “Who took a piece of my bread?”</p>
+          <p id="fifteen">The fourth said, “Who ate my vegetables?”</p>
+          <p id="sixteen">The fifth said, “Who used my fork?”</p>
+          <p id="eigthteen">The sixth said, “Who used my knife?”</p>
+          <p id="nineteen">The seventh said, “Who drank from my jar?”</p>
+          <p id="twenty">Then, the first dwarf, noticing wrinkles in his bed sheets said, “Who has slept in my bed?”</p>
+          <p id="twentyone">And the others, checking their beds, replied, “Someone has been in our beds too.”</p>
+          <p id="twentytwo">When the seventh dwarf looked in his bed, he saw Snow White, who was sleeping soundly. He
+            called the others who came over running. “Oh heavens! Oh heavens!” they whispered. “What a dear girl!”</p>
+          <p id="twentythree">When dawn came, Snow White woke up, and felt scared when she saw the seven dwarfs. Yet
+            they
+            were friendly and asked her name.</p>
+          <p id="twentyfour">“My name is Snow White,” she answered. She told them all about her evil stepmother.</p>
+          <p id="twentyfive">Feeling sorry for Snow White, the dwarfs told her she was welcomed to stay with them.</p>
+          <p id="twentysix">“Our home is yours, and you can stay with us as long as you want. You can take care of our
+            house, cook, fix the beds, wash, sew and knit.”</p>
+          <p id="twentyeigth">Snow White accepted happily and stayed with them. She kept the dwarfs house in order. In
+            the
+            morning, they went to the mountains to look for gold and precious stones, and in the evening, they returned,
+            finding dinner ready.</p>
+          <p id="twentynine">Time passed and one day, the queen decided to consult her mirror and discovered that the
+            princess was still alive. Furious, she poisoned an apple and took on the appearance of an old woman.</p>
+          <p id="thirty">“A bite of this apple and Snow White will sleep forever,” said the evil queen.</p>
+          <p id="thirtyone">The next day, the dwarfs left for work and Snow White was left alone.</p>
+          <p id="thirtytwo">Shortly afterwards, the queen, disguised as an old woman, approached the kitchen window. The
+            princess offered her a glass of water.</p>
+          <p id="thirtythree">“Thank you!” replied the old woman. “Let me give you this apple in return.”</p>
+          <p id="thirtyfour">The moment she bit the apple, Snow White fell unconscious on the floor. The dwarfs, alerted
+            by forest animals, arrived at the cabin while the evil queen fled.</p>
+          <p id="thirtyfive">The dwarfs placed a Snow White in a glass case, hoping one day she would awaken.</p>
+          <p id="thirtysix">The day came when a prince crossing the forest on his horse saw the beautiful girl in the
+            glass case and marveled at her beauty. He bent down and kissed her on the cheek. At that moment, Snow White
+            awoke to break the evil queen’s spell.</p>
+          <p id="thirtyseven">Snow White and the Prince were married and lived happily ever after.</p>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-          new GreenAudioPlayer('.ready-player-1', { showTooltips: true, showDownloadButton: false, enableKeystrokes: true });
+          <h3 id="moral">Moral: Do not count you chickens before they are hatched.</h3>
+          <img src="../img/blancanieves2.jpg" />
+        </div>
+
+             
+        <div id="spanish" style="display: none;">
+          <h2 id="titulo">Blanca Nieves y los Siete Enanos</h2>
+          <!-- <button id="cambiar" onclick="cambiartitulo(), cambiarTextouno(), cambiarTextodos(), cambiarTextotres(), cambiarmoral()">Translate</button> -->
+          <img src="../img/blancanieves1.jpg" />
+
+          <div class="ready-player-1">
+            <audio preload="yes">
+              <source src="../media/Snow_white.mp3">
+            </audio>
+          </div>
+
+          <p id = "unos">
+            Érase una vez una hermosa joven princesa llamada Blancanieves. Ella vivía en un reino lejano con
+            su padre y su madrastra.
+          </p>
+          <p id = "two"> Su madrastra, la reina, también era muy hermosa pero arrogante y orgullosa. Ella paso todo el dia
+            curioso
+            a sí misma frente al espejo. El espejo era mágico y cuando estaba frente a ella le preguntaba: "Espejo,
+            espejo en la pared, ¿quién es la mujer más bella de todas?
+          </p>
+          <p id = "three"> El espejo respondería: "Eres la más bella de todas las mujeres". </p>
+          <p id = "four"> Esta respuesta satisfizo a la reina porque sabía que su espejo siempre decía la verdad. </p>
+          <p id = "five"> Sin embargo, a medida que pasaron los años, la belleza y amabilidad de Blancanieves se hizo más evidente, incluso
+            superando el de la reina. Finalmente, llegó un día en que la reina preguntó: "Espejo, espejo, en la pared,
+            ¿Quién es la más bella de todas? ”</p>
+          <p id = "six"> El espejo respondió: "Blancanieves es más amable y más bella que tú". </p>
+          <p id = "seven"> La reina estaba llena de ira. Ella ideó un plan para deshacerse de Blancanieves. Ella pidió ver
+            la
+            palacio
+            cazador y le dijo: "Lleva a la joven princesa al bosque y asegúrate de que los animales salvajes cuiden
+            de ella para que nunca la volvamos a ver ". </p>
+          <p id = "ocho"> Engañando a Blancanieves, el cazador la llevó al bosque, pero cuando estaba a punto de cargar
+            fuera
+            Por orden de la reina, se compadeció de la hermosa niña y le dijo: “Corre, vete, pobre niña. Encuentra un lugar seguro
+            vivir ". </p>
+          <p id = "nine"> Al encontrarse sola en el bosque, corrió lo más lejos que pudo hasta el anochecer. Entonces,
+            ella vio una pequeña choza y se fue a dormir. Todo en la cabaña era pequeño. Había una mesa con
+            una
+            mantel blanco y siete platos pequeños, cada uno una cuchara. Además, había siete cuchillos y tenedores pequeños, y
+            siete tarros Había siete camas pequeñas contra la pared, una al lado de la otra y cubiertas con mantas como
+            blanco
+            como nieve. </p>
+          <p id = "diez">
+            Al no haber comido en todo el día, Blancanieves tenía hambre y sed, así que comió un poco de verduras y pan.
+            de cada plato y bebió un pequeño sorbo de cada frasco. Luego, cansada, trató de acostarse con cada uno de
+            las camas hasta finalmente instalarse en la séptima cama.
+          </p>
+          <p id = "once"> Cuando estaba oscuro, los dueños de la cabaña regresaron. Eran siete enanos que extraían oro y
+            piedras preciosas en las montañas. Dentro de la cabina, encendieron sus siete linternas y notaron que las cosas
+            no estaban exactamente en el orden en que los habían dejado. </p>
+            <p id = "doce"> El primer enano dijo: "¿Quién se ha sentado en mi silla?" </p>
+            <p id = "trece"> El segundo dijo: "¿Quién comió de mi plato?" </p>
+            <p id = "catorce"> El tercero dijo: "¿Quién tomó un pedazo de mi pan?" </p>
+            <p id = "quince"> El cuarto dijo: "¿Quién se comió mis verduras?" </p>
+            <p id = "sixteen"> El quinto dijo: "¿Quién usó mi tenedor?" </p>
+            <p id = "dieciocho"> El sexto dijo: "¿Quién usó mi cuchillo?" </p>
+            <p id = "nineteen"> El séptimo dijo: "¿Quién bebió de mi jarra?" </p>
+            <p id = "twenty"> Entonces, el primer enano, al notar las arrugas en las sábanas de su cama, dijo: "¿Quién ha dormido en mi cama?" </p>
+            <p id = "twentyone"> Y los demás, revisando sus camas, respondieron: "Alguien también ha estado en nuestras camas". </p>
+            <p id = "twentytwo"> Cuando el séptimo enano miró en su cama, vio a Blancanieves, que dormía profundamente. Él
+              llamó a los otros que vinieron corriendo. “¡Oh cielos! ¡Oh cielos! susurraron ellos. "¡Qué querida niña!" </p>
+            <p id = "twentythree"> Cuando amaneció, Blancanieves se despertó y sintió miedo al ver a los siete enanitos. Todavía
+              ellos
+              fueron amables y le preguntaron su nombre. </p>
+            <p id = "twentyfour"> "Mi nombre es Blancanieves", respondió ella. Ella les contó todo sobre su malvada madrastra. </p>
+            <p id = "twentyfive"> Sintiendo lástima por Blancanieves, los enanos le dijeron que era bienvenida para quedarse con ellos. </p>
+            <p id = "twentysix"> “Nuestro hogar es tuyo y puedes quedarte con nosotros todo el tiempo que quieras. Puedes cuidar nuestro
+              casa, cocina, arregla las camas, lava, cose y teje ". </p>
+            <p id = "twentyeigth"> Blancanieves aceptó felizmente y se quedó con ellos. Mantuvo la casa de los enanos en orden. En
+              la
+              Por la mañana, fueron a las montañas a buscar oro y piedras preciosas, y por la tarde regresaron.
+              encontrar la cena lista. </p>
+            <p id = "twentynine"> El tiempo pasó y un día, la reina decidió consultar su espejo y descubrió que el
+              La princesa todavía estaba viva. Furiosa, envenenó una manzana y adoptó la apariencia de una anciana. </p>
+            <p id = "treinta"> "Un mordisco de esta manzana y Blancanieves dormirá para siempre", dijo la reina malvada. </p>
+            <p id = "treinta y uno"> Al día siguiente, los enanos se fueron a trabajar y Blancanieves se quedó sola. </p>
+            <p id = "treinta y dos"> Poco después, la reina, disfrazada de anciana, se acercó a la ventana de la cocina. los
+              la princesa le ofreció un vaso de agua. </p>
+            <p id = "treinta y tres"> "¡Gracias!" respondió la anciana. "Déjame darte esta manzana a cambio". </p>
+            <p id = "treinta y cuatro"> En el momento en que mordió la manzana, Blancanieves cayó inconsciente en el suelo. Los enanos, alertados
+              por animales del bosque, llegaron a la cabaña mientras la reina malvada huía. </p>
+            <p id = "treinta y cinco"> Los enanos colocaron un Blancanieves en una vitrina, esperando que algún día despertara. </p>
+            <p id = "thirtysix"> Llegó el día en que un príncipe cruzando el bosque en su caballo vio a la hermosa niña en el
+              vitrina y se maravilló de su belleza. Se inclinó y la besó en la mejilla. En ese momento, Blancanieves
+              despertó para romper el hechizo de la reina malvada. </p>
+            <p id = "treinta y siete"> Blancanieves y el Príncipe se casaron y vivieron felices para siempre. </p>
+
+          <h3 id="moral">Moral: Do not count you chickens before they are hatched.</h3>
+          <img src="../img/blancanieves2.jpg" />
+        </div>
+
+      </div>
+    </section>
+  </article>
+
+  <script src="../js/index.js"></script>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/scriptnav.js"></script>
+  <script src="../js/green-audio-player.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      new GreenAudioPlayer('.ready-player-1', {
+        showTooltips: true,
+        showDownloadButton: false,
+        enableKeystrokes: true
       });
+    });
   </script>
-<!-- you are my dream .:eri:. -->
+  <!-- you are my dream .:eri:. -->
 
 </body>
 
